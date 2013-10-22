@@ -1,6 +1,6 @@
-# Casper
+# Zeitgeist
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+A timeless typographical theme for [Ghost](http://github.com/tryghost/ghost/).
 
 ## Copyright & License
 

@@ -1,0 +1,24 @@
+{{!< default}}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<aside class="cover cover-home columns large-4" id="site-cover">
+    <div class="cover-image" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}></div>
+    <div class="cover-inner">
+        <div class="cover-body">
+            
+                {{#if @blog.logo}}
+                  <h1 class="blog-logo"><a id="blog-logo" href="{{@blog.url}}" title="{{@blog.title}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a></h1>
+                {{else}}
+                  <h1 class="blog-title"><a id="blog-logo" href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a></h1>
+                {{/if}}
+                <p class="blog-description">{{@blog.description}}</p>
+            
+        </div>
+        <div class="cover-social">
+            <ul>
+                <li><a class="subscribe social foundicon-rss" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a></li>
+            </ul>
+        </div>
+    </div>
+    
+</aside>
