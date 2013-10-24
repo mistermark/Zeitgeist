@@ -1,22 +1,37 @@
 $bordercolor: #dededc;
+$sectionMargins: 0 0 3em;
+$sectionPaddings: 0 0 3em;
 
 html, body, .container {
   height: 100%;
 }
-body {
+body.home-template {
   overflow: hidden;
 }
-.row {
+.home-template .row {
   max-width: none;
+}
+
+h1.post-title,
+h2.post-title,
+h3.post-title,
+h4.post-title,
+h5.post-title,
+h6.post-title {
+  color: darken($primary-color, 12%);
+  .post-template & {
+    text-align: center;
+    margin-bottom: 1.4em;
+  }
 }
 
 .cover {
   height: 100%;
-  // width: 30%;
   margin: 0; padding: 0;
   position: absolute;
   bottom: 0; top: 0;
   left: 0;
+
 }
 .cover-image {
   background: #fff none no-repeat 0 0;
@@ -50,10 +65,8 @@ body {
   font-weight: normal;
 }
 .cover-social {
-  
   padding: 32px 10% 10%;
   position: relative;
-  
   ul, li {
     list-style: none;
     display: inline-block;
@@ -75,7 +88,7 @@ body {
       background-color: #009973;
     }
   }
-  li, a {
+  li, a, i {
     width: 1.8em; height: 1.8em;
     line-height: 1.8em;
     color: #333332;
@@ -87,21 +100,21 @@ body {
       color: #fff;
     }
   }
-  a {
+  i {
     display: block;
-    font-size: 0.8em;
+    font-size: 1.1em;
     line-height: inherit;
     width: 100%; height: 100%;
   }
 }
 
 .content {
-  overflow: auto;
   position: absolute;
-  // left: 30%;
   right: 0;
   top: 0;
   bottom: 0;
+  overflow: auto;
+  height: 100%;
   .post {
     padding: 35px 0;
     word-wrap: break-word;
@@ -110,29 +123,81 @@ body {
       padding: 0 0 35px;
       border-top: none;
     }
-    .post-meta {
-      padding: 2px 0 10px;
-      color: #b3b3b1;
-      li {
-        display: inline;
-      }
+  }
+}
+.post-flag-author {
+  text-align: center;
+  padding: 0 0 4em;
+  .author-image {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 9px solid rgba(255, 255, 255, 0.2);
+    // background-size: cover;
+    background-position: center;
+  }
+}
+.post-meta {
+  padding: 2px 0 10px;
+  color: #b3b3b1;
+  .post-template & {
+    border-top: 1px solid #ddd;
+    margin: $sectionMargins;
+  }
+  .post-date,
+  .tag-list {
+    margin-bottom: 1em;
+    margin-top: -0.8em;
+    text-align: center;
+  }
+  .post-date time,
+  .tag-list span {
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 1em;
+    i {
+      margin-right: 0.24em;
     }
+  }
+  .home-template & .tag-list span {
+    display: inline;
+  }
+  li {
+    display: inline;
+  }
+}
+.post-share {
+  h6:after {
+    content: ":";
+  }
+}
+.post-content {
+  margin-bottom: 3em;
+  p:first-child {
+    // font-size: 1.2em;
+    margin-bottom: 1.2em;
   }
 }
 
-.post-footer {
-  .author {
-    border-top: 1px solid $bordercolor;
-    border-bottom: 1px solid $bordercolor;
-  }
+
+.author {
+  // border-top: 1px solid $bordercolor;
+  border-bottom: 1px solid $bordercolor;
+  margin: $sectionMargins;
+  padding: $sectionPaddings;
   .author-image {
-    // border-radius: 50%;
-    float: left;
+    img {
+      border-radius: 50%;
+    }
   }
-  
+  .author-bio {
+    font-style: italic;
+  }
 }
-.article-wrap {
-  padding: 50px 65px;
+
+.post-page-content {
+  padding: 50px 0;
 }
 
 .pagination {

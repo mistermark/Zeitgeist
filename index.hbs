@@ -3,7 +3,7 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-    {{> zeit_bar}}
+{{> zeit_bar}}
 
 {{! The main content area on the homepage }}
 <main class="content columns large-8" role="main">
@@ -22,7 +22,7 @@
                 <p>{{excerpt}}&hellip;</p>
             </section>
             <footer class="post-meta">
-                <ul>
+                <ul class="no-bullet">
                     <li><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></li>
                     {{#if tags}}
                     <li>on {{tags}}</li>
@@ -39,10 +39,6 @@
 
         </div>
 
-        
-
     </div>
-
-    
 
 </main>
