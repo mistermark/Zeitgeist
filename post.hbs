@@ -36,48 +36,20 @@
             </section>
 
             <section class="post-meta post-tags">
+                <div class="post-meta-inner">
                 {{#if tags}}
                 <div class="tag-list">
                     <span><i class="fi-bookmark"></i> {{tags}}</span>
                 </div>
                 {{/if}}
+                </div>
             </section>
-
-            {{#if author}}
-            <section class="author">
-                <h3>{{author.name}}</h3>
-                <p>{{author.bio}}</p>
-                <ul class="no-bullet inline-list">
-                    <li><span><i class="fi-marker"></i> {{author.location}}</span></li>
-                    <li><span><i class="fi-link"></i> <a href="{{author.website}}">{{author.website}}</a></span></li>
-                </ul>
-            </section>
-            {{/if}}
-
-            <footer class="post-footer">
-
-                
-
-                <section class="post-share">
-                    <h6>Share this post</h6>
-                    <a class="fi-social-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
-                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                        <span class="hidden">Twitter</span>
-                    </a>
-                    <a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                        <span class="hidden">Facebook</span>
-                    </a>
-                    <a href="https://plus.google.com/share?url={{url absolute="true"}}"
-                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                       <i class="fi-social-google-plus"></i>
-                        <span class="hidden">Google+</span>
-                    </a>
-                </section>
-
-            </footer>
 
             {{/post}}
+
+            {{> zeit_post_author}}
+
+            {{> zeit_post_foot}}
 
         </article>
 

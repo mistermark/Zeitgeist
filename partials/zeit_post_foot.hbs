@@ -1,0 +1,24 @@
+{{#post}}
+
+<footer class="post-footer">
+
+    <ul class="post-share no-bullet inline-list">
+        <li><span class="h5">Share this post</span></li>
+        <li><a class="fi-social-twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <span class="hidden">Twitter</span>
+        </a></li>
+        <li><a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <span class="hidden">Facebook</span>
+        </a></li>
+        <li><a href="https://plus.google.com/share?url={{url absolute="true"}}"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+           <i class="fi-social-google-plus"></i>
+            <span class="hidden">Google+</span>
+        </a></li>
+    </ul>
+
+</footer>
+
+{{/post}}

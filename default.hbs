@@ -22,15 +22,10 @@
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
-<body class="{{body_class}}">
-
-    <div class="container row" id="container">
+<body class="{{body_class}} clearfix">
         
         {{! Everything else gets inserted here }}
         {{{body}}}
-
-    </div>
-    
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
@@ -38,7 +33,6 @@
 
     {{! The main JavaScript file for Zeitgeis }}
     <script type="text/javascript" src="/assets/js/index.js"></script>
-    
 
 </body>
 </html>

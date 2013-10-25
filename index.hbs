@@ -8,7 +8,7 @@
 {{! The main content area on the homepage }}
 <main class="content columns large-8" role="main">
 
-    <div class="row">
+    <div class="content-inner row">
         <div class="article-wrap columns large-10">
 
         {{! Each post will be output using this markup }}
@@ -21,13 +21,14 @@
             <section class="post-excerpt">
                 <p>{{excerpt}}&hellip;</p>
             </section>
-            <footer class="post-meta">
-                <ul class="no-bullet">
-                    <li><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time></li>
+            <div class="post-meta post-timestamp">
+                <div class="post-date">
+                    <span>Posted on </span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD. MMMM YYYY'}}</time>
                     {{#if tags}}
-                    <li>on {{tags}}</li>
+                    <span> in {{tags}}</span>
                     {{/if}}
-            </footer>
+                </div>
+            </div>
         </article>
 
         {{/foreach}}

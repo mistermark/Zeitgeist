@@ -1,0 +1,14 @@
+{{#post}}
+
+{{#if author}}
+<section class="author">
+    <span class="author-name">{{author.name}}</span>
+    <p>{{author.bio}}</p>
+    <ul class="no-bullet clearfix">
+        <li><span><i class="fi-marker"></i> {{author.location}}</span></li>
+        <li><span><i class="fi-link"></i> <a href="{{author.website}}">{{author.website}}</a></span></li>
+    </ul>
+</section>
+{{/if}}
+
+{{/post}}
