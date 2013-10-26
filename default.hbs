@@ -24,12 +24,13 @@
 </head>
 <body class="{{body_class}} clearfix">
         
-        {{! Everything else gets inserted here }}
-        {{{body}}}
+    {{! Everything else gets inserted here }}
+    {{{body}}}
 
     {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
-    {{!--<script type="text/javascript" src="/assets/js/vendor/ligatures-plus.js"></script>--}}
+    <script type="text/javascript" src="/assets/js/foundation/foundation.js"></script>
+    <script type="text/javascript" src="/assets/js/foundation/foundation.tooltips.js"></script>
 
     {{! The main JavaScript file for Zeitgeis }}
     <script type="text/javascript" src="/assets/js/index.js"></script>

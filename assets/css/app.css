@@ -6186,6 +6186,9 @@ h6.post-title {
     text-align: center;
     margin-bottom: 0.8em; }
 
+.fi-icon {
+  margin-right: 0.6em; }
+
 .cover {
   min-height: 120px; }
 
@@ -6310,6 +6313,8 @@ h6.post-title {
     .post-meta .post-date time i,
     .post-meta .tag-list span i {
       margin-right: 0.24em; }
+  .home-template .post-meta .post-date {
+    margin-right: 1.3em; }
   .home-template .post-meta .tag-list span {
     display: inline; }
   .post-meta li {
@@ -6387,7 +6392,10 @@ h6.post-title {
 .site-footer {
   font-family: "calluna-1", "calluna-2", "Georgia", "Times New Roman", Georgia, sans-serif;
   font-size: 14px;
-  padding: 75px 0 0; }
+  padding-top: 75px;
+  line-height: 1.6em; }
+  body .site-footer {
+    float: left; }
   .site-footer .copyright,
   .site-footer .poweredby {
     padding: 0 0 10px; }

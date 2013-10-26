@@ -22,12 +22,15 @@
                 <p>{{excerpt}}&hellip;</p>
             </section>
             <div class="post-meta post-timestamp">
-                <div class="post-date">
-                    <span>Posted on </span><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD. MMMM YYYY'}}</time>
-                    {{#if tags}}
-                    <span> in {{tags}}</span>
-                    {{/if}}
-                </div>
+                <span class="post-date">
+                    <i class="fi-icon fi-clock"></i>
+                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMMM YYYY'}}</time>
+                </span>
+                {{#if tags}}
+                <span class="tag-list">
+                    <span><i class="fi-icon fi-bookmark"></i> {{tags}}</span>
+                </span>
+                {{/if}}
             </div>
         </article>
 
@@ -36,8 +39,10 @@
         {{!! After all the posts, we have the previous/next pagination links }}
         {{pagination}}
 
-        {{> zeit_footer}}
+        </div>
 
+        <div class="columns large-12">
+            {{> zeit_footer}}
         </div>
 
     </div>

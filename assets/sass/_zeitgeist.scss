@@ -12,6 +12,9 @@ h6.post-title {
     margin-bottom: 0.8em;
   }
 }
+.fi-icon {
+  margin-right: 0.6em;
+}
 
 .cover {
   min-height: 120px;
@@ -157,6 +160,9 @@ h6.post-title {
       margin-right: 0.24em;
     }
   }
+  .home-template & .post-date {
+    margin-right: 1.3em;
+  }
   .home-template & .tag-list span {
     display: inline;
   }
@@ -258,7 +264,11 @@ h6.post-title {
 .site-footer {
   font-family: $header-font-family;
   font-size: 14px;
-  padding: 75px 0 0;
+  padding-top: 75px;
+  line-height: 1.6em;
+  body & {
+    float: left;
+  }
   .copyright,
   .poweredby {
     padding: 0 0 10px;

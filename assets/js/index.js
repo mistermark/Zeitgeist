@@ -8,6 +8,8 @@
 
     $(document).ready(function(){
 
+        // $(document).foundation();
+
         // On the home page, move the blog icon inside the header 
         // for better relative/absolute positioning.
 
