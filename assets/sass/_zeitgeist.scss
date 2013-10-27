@@ -138,6 +138,23 @@ h6.post-title {
     border-radius: 50%;
     border: 9px solid rgba(255, 255, 255, 0.3);
     background-position: center;
+    a.post-sitelink {
+      display: block;
+      width: 200px;
+      height: 200px;
+      margin-left: -9px;
+      margin-right: -9px;
+      background-color: rgba(0,0,0,0.32);
+      line-height: 200px;
+      font-size: 1em;
+      color: #fff;
+      opacity: 0;
+      filter: alpha(opacity=0);
+      &:hover, &:active {
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+      }
+    }
   }
 }
 .post-meta {
