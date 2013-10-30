@@ -53,7 +53,7 @@ $default-float: left;
 
 $body-bg: #fefefe;
 $body-font-color: #333332;
-$body-font-family: "calluna-sans-1","calluna-sans-2", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "PT Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -160,7 +160,7 @@ $cursor-default-value: "auto";
 
 // Control header font styles
 
-$header-font-family: "calluna-1", "calluna-2", "Georgia", "Times New Roman", Georgia, sans-serif;
+$header-font-family: "PT Serif", "Georgia", "Times New Roman", Georgia, serif;
 $header-font-weight: bold;
 // $header-font-style: normal;
 $header-font-color: #222;
@@ -173,7 +173,7 @@ $header-text-rendering: optimizeLegibility;
 
 // $h1-font-size: emCalc(54);
 // $h2-font-size: emCalc(48);
-// $h3-font-size: emCalc(42);
+$h3-font-size: emCalc(32);
 // $h4-font-size: emCalc(36);
 // $h5-font-size: emCalc(30);
 // $h6-font-size: emCalc(24);
@@ -193,9 +193,9 @@ $small-font-color: lighten($header-font-color, 50%);
 
 // Style paragraphs
 
-$paragraph-font-family: "calluna-1", "calluna-2", "Georgia", "Times New Roman", Georgia, sans-serif;
+$paragraph-font-family: "PT Serif", "Georgia", "Times New Roman", Georgia, serif;
 // $paragraph-font-weight: normal;
-$paragraph-font-size: 1.2em;
+$paragraph-font-size: 1.1em;
 // $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: emCalc(2);
 // $paragraph-aside-font-size: emCalc(14);

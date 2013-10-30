@@ -1,14 +1,16 @@
 # Zeitgeist
 
-A timeless typographical theme for [Ghost](http://github.com/tryghost/ghost/) inspired by the wonderful design and thinking blog [Medium](http://www.medium.com).
+A timeless typographical and content focussed theme for [Ghost](http://github.com/tryghost/ghost/). Inspired by [Medium](http://www.medium.com), where people share ideas and stories for the public.
 
 ## Foundation
 
-For the grid layout and icons I've used the framework [Foundation](http://foundation.zurb.com) including their icons for the social stuff.
+For the grid layout and icons I've used [Foundation](http://foundation.zurb.com), including their icons for the social stuff.
 
 ## Typography
 
-Both for the header and the body fonts I've used the font [Calluna (sans)](http://www.exljbris.com/calluna.html) hosted on [Typekit](http://typekit.com). By default these are disabled, since you need to host them on Typekit yourself (they're free, so go ahead!). I've set a [Google Font API](http://www.google.com/fonts) hosted font as a fallback.
+For the distribution of the theme I've used the font [PT Serif](http://www.google.com/fonts/specimen/PT+Serif) and [PT Serif Caption](http://www.google.com/fonts/specimen/PT+Serif+Caption) on [Google Fonts](http://www.google.com/fonts). PT Serif Caption is mainly used for the intro texts on the articles or the first paragraphs.
+
+When you're using the theme for your own use I'd recommend signing up for an account on [Typekit](http://typekit.com) and use [Calluna (sans)](http://www.exljbris.com/calluna.html). By default these are disabled, since you need to host them on your own Typekit account (they're free, so why not sign up?). Else you can keep using the Google Fonts hosted ones.
 
 For the best experience I'd recommend to serve the Calluna font using a trial account on Typekit.
 
