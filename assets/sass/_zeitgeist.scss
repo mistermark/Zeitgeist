@@ -211,6 +211,10 @@ h6.post-title {
 }
 .post-content {
   margin-bottom: 3em;
+  img {
+    margin: 0 auto;
+    display: block;
+  }
   p:first-child {
     // font-size: 1.1em;
     margin-bottom: 1.2em;
