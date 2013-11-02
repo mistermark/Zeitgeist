@@ -6,12 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     {{! Page Meta }}
-    <title>{{meta_title}}</title>
+    {{#if post}}
+    <title>{{meta_title}} - {{@blog.title}}</title>
+    {{else}}
+    <title>{{@blog.title}}</title>
+    {{/if}}
     <meta name="description" content="{{meta_description}}" />
 
     <meta name="HandheldFriendly" content="True" />
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:site_name" content="{{@blog.title}}"/>
+    {{#if post}}
+    {{#post}}
+    <meta property="og:title" content="{{title}} - {{@blog.title}}"/>
+    <meta property="og:url" content="{{url absolute='true'}}"/>
+    {{/post}}
+    {{else}}
+    <meta property="og:title" content="{{meta_title}} - {{meta_description}}"/>
+    <meta property="og:url" content="{{url absolute='true'}}"/>
+    {{/if}}
+    <meta property="og:type" content="blog"/>
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
