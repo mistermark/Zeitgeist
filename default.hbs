@@ -22,12 +22,15 @@
     {{#post}}
     <meta property="og:title" content="{{title}} - {{@blog.title}}"/>
     <meta property="og:url" content="{{url absolute='true'}}"/>
+    <meta property="og:description" content="{{excerpt}}"/>
     {{/post}}
     {{else}}
     <meta property="og:title" content="{{meta_title}} - {{meta_description}}"/>
     <meta property="og:url" content="{{url absolute='true'}}"/>
+    <meta property="og:description" content="{{@blog.description}}"/>
     {{/if}}
     <meta property="og:type" content="blog"/>
+    <meta property="og:image" content="{{author.image}}"/>
 
     <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
