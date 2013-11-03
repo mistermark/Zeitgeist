@@ -198,6 +198,7 @@ h6.post-title {
   }
 }
 .post-share {
+  margin-bottom: 3em;
   span.h5, p, ul, a {
     font-family: $body-font-family;
   }
@@ -214,6 +215,9 @@ h6.post-title {
   img {
     margin: 0 auto;
     display: block;
+  }
+  p {
+    font-size: 1.25em;
   }
   p:first-child {
     // font-size: 1.1em;
