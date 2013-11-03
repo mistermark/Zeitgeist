@@ -12,7 +12,14 @@ For the distribution of the theme I've used the font [PT Serif](http://www.googl
 
 When you're using the theme for your own use I'd recommend signing up for an account on [Typekit](http://typekit.com) and use [Calluna (sans)](http://www.exljbris.com/calluna.html). By default these are disabled, since you need to host them on your own Typekit account (they're free, so why not sign up?). Else you can keep using the Google Fonts hosted ones.
 
+In `default.hbs` uncomment the lines for Typekit and fill in your own code where it now says `//use.typekit.net/YOURCODE.js`. Then in `assets/sass/_zeitgeist.scss` replace the lines with `"PT Serif"` to `"calluna-1", "calluna-2"` and `"PT Sans"` with `"calluna-sans-1", "calluna-sans-2"`.
+
 For the best experience I'd recommend to serve the Calluna font using a trial account on Typekit.
+
+## Commenting
+
+For commenting I've included a simple setup for Disqus commenting platform. Currently it's commented out, waiting for configuration. Comment out the Javascript in `default.hbs` to enable the Disqus commenting system. Make sure you fill in your Disqus shortname, else it won't work.
+
 
 ## Copyright & License
 
