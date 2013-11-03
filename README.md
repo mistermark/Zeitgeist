@@ -16,6 +16,11 @@ In `default.hbs` uncomment the lines for Typekit and fill in your own code where
 
 For the best experience I'd recommend to serve the Calluna font using a trial account on Typekit.
 
+## Commenting
+
+For commenting I've included a simple setup for Disqus commenting platform. Currently it's commented out, waiting for configuration. Comment out the Javascript in `default.hbs` to enable the Disqus commenting system. Make sure you fill in your Disqus shortname, else it won't work.
+
+
 ## Copyright & License
 
 Copyright (C) 2013 Mark de Jong - Released under the MIT License.
