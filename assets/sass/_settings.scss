@@ -171,9 +171,9 @@ $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
-// $h1-font-size: emCalc(54);
-// $h2-font-size: emCalc(48);
-// $h3-font-size: emCalc(42);
+$h1-font-size: emCalc(48);
+$h2-font-size: emCalc(42);
+$h3-font-size: emCalc(36);
 // $h4-font-size: emCalc(36);
 // $h5-font-size: emCalc(30);
 // $h6-font-size: emCalc(24);
@@ -195,8 +195,8 @@ $small-font-color: lighten($header-font-color, 50%);
 
 $paragraph-font-family: "calluna-1", "calluna-2", "Georgia", "Times New Roman", Georgia, sans-serif;
 // $paragraph-font-weight: normal;
-$paragraph-font-size: 1.2em;
-// $paragraph-line-height: 1.6;
+$paragraph-font-size: 1.15em;
+$paragraph-line-height: 1.5;
 // $paragraph-margin-bottom: emCalc(2);
 // $paragraph-aside-font-size: emCalc(14);
 // $paragraph-aside-line-height: 1.35;
