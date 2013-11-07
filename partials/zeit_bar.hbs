@@ -2,8 +2,8 @@
 
 {{! The big featured header on the homepage, with the site logo and description }}
 <aside class="cover cover-home columns large-4" id="site-cover">
-    <div class="cover-inner large-4">
-        <div class="cover-image" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}></div>
+    <div id="cover-inner" class="cover-inner large-4">
+        <div id="cover-image"></div>
         <div class="cover-body-kling">
             <div class="cover-body">
                 {{#if @blog.logo}}
