@@ -52,6 +52,8 @@ $em-base: $base-font-size;
 $serifSansFont: "PT Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $serifFont: "PT Serif", "Georgia", "Times New Roman", Georgia, sans-serif;
 
+@import "zeitgeist_settings";
+
 $default-float: left;
 
 $body-bg: #fefefe;
@@ -174,7 +176,7 @@ $header-text-rendering: optimizeLegibility;
 
 // Control header font sizes
 
-$h1-font-size: emCalc(48);
+$h1-font-size: emCalc(72);
 $h2-font-size: emCalc(42);
 $h3-font-size: emCalc(36);
 // $h4-font-size: emCalc(36);

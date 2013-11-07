@@ -35,15 +35,20 @@ h1,h2,h3,h4,h5,h6 {
             transition: opacity 0.3s ease;
     background-color: #333;
   }
-  #cover-image.cover-loading {
-    background-image: url(/assets/images/loader.gif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    .cover-image {
-      opacity: 0;
-      filter: alpha(opacity=0);
+  #cover-image {
+    .cover-loader {
+      width: 64px; height: 64px;
+      position: absolute;
+      left: 50%; margin-left: -32px;
+      top: 33%; margin-top: -32px;
     }
-  }
+    &.cover-loading {
+      .cover-image {
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+    }
+  }  
   .cover-image {
     background: transparent none no-repeat center;
     background-size: cover;
@@ -84,7 +89,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   .cover-body-kling {
     position: absolute;
-    left: 0;
+    left: 0; right: 0;
     bottom: 0;
   }
   .cover-body {
@@ -106,7 +111,7 @@ h1,h2,h3,h4,h5,h6 {
   }
 
   .cover-social {
-    padding: 32px 10% 12%;
+    padding: 32px 12% 12%;
     position: relative;
     ul, li {
       list-style: none;
@@ -114,7 +119,7 @@ h1,h2,h3,h4,h5,h6 {
       margin: 0;
     }
     ul {
-      width: 92%;
+      width: 100%;
       font-size: 1.4em;
       text-align: center;
       box-shadow: inset 0px 2px 0px -1px rgba(255,255,255,0.6);
