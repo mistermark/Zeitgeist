@@ -4,6 +4,10 @@
 
 $(document).ready(function() {
 
-    $('#cover-image').flickrHeist();
+    $('#cover-image').flickrHeist({
+      tags: 'dapper',
+      // debug: 'true',
+      size: 'url_c'
+    });
 
 });
