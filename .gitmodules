@@ -1,0 +1,4 @@
+[submodule "assets/js/vendor/flickrheist"]
+	path = assets/js/vendor/flickrheist
+	url = https://mistermark@github.com/mistermark/flickrheist.git
+	branch = master
